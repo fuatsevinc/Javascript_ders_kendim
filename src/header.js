@@ -1,8 +1,10 @@
 function Header(){
-return    <div>
-<h1>
-Clarusway
-</h1>
-
-            </div>
+return    
+<div>
+    <h1>
+    Clarusway
+    </h1>
+</div>
 }
+
+export 
