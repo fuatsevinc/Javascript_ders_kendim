@@ -1,158 +1,70 @@
-# ders1
-JavaScript ile geliştirme yaparken kullanılan function veya fonksiyon yapısını oluşturma, çağırma, değer döndürme, kullanımı fonksiyon örnekleri ile yer alıyor. 
+# Getting Started with Create React App
 
- 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-JavaScript ile yazılmış bir fonksiyon, belirli bir işlemi yapmak için tasarlanmış kod bloğudur. 
+## Available Scripts
 
-avaScript ile yazılmış bir fonksiyon çalıştırıldığında (çağrıldığında) işlem yapar. 
+In the project directory, you can run:
 
- 
+### `yarn start`
 
-<script> 
-  function Topla(sayi1, sayi2) { 
-    return sayi1 + sayi2;         // sayi1 ve sayi2 toplamını döndürür 
-  } 
-  alert(Topla(10, 5)); 
-</script> 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
- 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Fonksiyon oluşturma 
+### `yarn test`
 
-Fonksiyon function anahtar kelimesi bir boşluk fonksyion adı ve parantez ile tanımlanır. 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Fonksiyon isimlerinde harf, rakam, alt çizgi ve dolar işareti olabilir. (değişken tanımlama kuralları ile aynı) 
+### `yarn build`
 
-Birden fazla parametre parantez içerisinde virgülle ayrılır. (parametre1, parametre2, parametre3, … ) 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Fonksiyon kodları süslü parantez { . . . } içerisine yazılır. 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
- 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-<script> 
-function fonksiyonAdi(parametre1, parametre2) { 
-  // fonksiyon kodları 
-} 
-</script> 
+### `yarn eject`
 
- 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Fonksiyon parametreleri fonksiyon kodlarında kullanmak için oluşturulmuş değişkenlerdir. 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Fonksiyon parametreleri fonksiyon çağırma işleminden sonra değer alır. 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Fonksiyon parametreleri fonksiyon içerisinde yerel değişken olarak tanımlanır. 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-JavaScript dilinde fonksiyonlar diğer programlama dillerindeki yordam, alt yordam ile aynıdır. 
-Fonksiyon çağırma 
+## Learn More
 
-JavaScript ile yazılmış fonksiyon kodlarının çalışması için fonksiyon çağırma veya fonksiyon çalıştırma işleminin yapılması gerekir. 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-JavaScript fonksiyon çalıştırmanın yolları; 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Bir olay meydana geldiğinde – kullanıcı HTML nesnesine tıkladığında 
+### Code Splitting
 
- 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-<button onclick="alert('Merhaba JavaScript');">Merhaba</button> 
+### Analyzing the Bundle Size
 
- 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Fonksiyon çağırma işlemi yapıldığında 
+### Making a Progressive Web App
 
- 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-<script> 
-function uyari(mesaj) { 
-  alert(mesaj); 
-} 
-uyari("Merhaba JavaScript"); 
-</script> 
+### Advanced Configuration
 
- 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Otamatik – fonksiyon içinde fonksiyon çağırma gibi 
+### Deployment
 
- 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-<script> 
-function uyari(mesaj) { 
-  alert(mesaj); 
-  uyari(mesaj); 
-} 
-uyari("Merhaba JavaScript"); 
-</script> 
+### `yarn build` fails to minify
 
- 
-
-Fonksiyon değer döndürme 
-
-JavaScipt fonksiyon kodları return anahtar kelimesine geldiğinde çalışmayı durdurur. 
-
-JavaScript fonksiyonun çağrıldığı yerden devam eder varsa kalan kodları işler. 
-
-Fonksiyonlar return anahtar kelimesi ile değer döndürür. 
-
- 
-
-<script> 
-  var sonuc; 
-  function Topla(sayi1, sayi2) { 
-    return sayi1 + sayi2;         // sayi1 ve sayi2 toplamını döndürür 
-  } 
-  sonuc = Topla(10, 5); 
-  alert(sonuc); 
-</script> 
-
-Örnekte Topla isminde fonksiyon tanımlanmış ve sayi1 ile sayi2 değerlerinin toplamı değer döndürme ile döndürülmüştür. 
-
-Fonksiyon kullanımı 
-
-JavaScript fonksiyon kullanımı ile bir defa kodu yazarak birden fazla kullanabiliriz. 
-
-JavaScript fonksiyonlarına parametre ekleyerek farklı değerler için farklı sonuçlar elde edebiliriz. 
-
- 
-
-<script> 
-  function celsiusCevir(fahrenhayt) { 
-      return (5 / 9) * (fahrenhayt - 32); 
-  } 
-  alert(celsiusCevir(50)); 
-  alert(celsiusCevir(104)); 
-</script> 
-
-Örnekte farklı değerleri parametre olarak alan ve hesaplama yapan celsiusCevir isimli fonksiyon tanımlanmıştır. 
-
-Örnekte celsiusCevir(50) ile fonksiyon çağırma işlemi yapılmıştır. 
-
-Sadece fonksiyon ismi yazılırsa JavaScript fonksiyon kodlarını döndürecektir. 
-
- 
-
-<script> 
-  var sonuc; 
-  function celsiusCevir(fahrenhayt) { 
-      return (5 / 9) * (fahrenhayt - 32); 
-  } 
-  alert(celsiusCevir); 
-</script> 
-
-JavaScript fonksiyon sonuçlarını değişkenlere atanabilir. 
-
- 
-
-<script> 
-  var sonuc; 
-  function celsiusCevir(fahrenhayt) { 
-      return (5/9) * (fahrenhayt-32); 
-  } 
-  sonuc = celsiusCevir(50); 
-  alert(sonuc); 
-</script> 
-
- 
-
-Fonksiyon sonucu ile işlem yapmayacaksanız değişkene atamadan kullanmanızı tavsiye ederim. 
- 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
