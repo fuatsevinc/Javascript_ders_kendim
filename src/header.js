@@ -2,7 +2,7 @@ function Header(){
 return    
 <div>
     <h1>
-    Clarusway
+    Clarusway Fuat
     </h1>
 </div>
 }
