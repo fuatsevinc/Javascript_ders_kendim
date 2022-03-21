@@ -1,7 +1,6 @@
-import header from "./Header.js";
-import footer from "./Footer";
-import Footer from "./Footer";
-
+import Header from "./Header.js";
+import Footer from "./Footer.jsx";
+import Msg from "./Msg.jsx";
 
 function App() {
   return (
