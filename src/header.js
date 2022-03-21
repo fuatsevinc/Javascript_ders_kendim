@@ -7,4 +7,4 @@ return
 </div>
 }
 
-export 
+export default Header;
